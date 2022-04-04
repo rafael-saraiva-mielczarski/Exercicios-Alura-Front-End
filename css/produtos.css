@@ -81,7 +81,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url("bg.jpg"); /* assim podemos adicionar uma imagem ao background de um pagina*/
+    background: url("/img/bg.jpg"); /* assim podemos adicionar uma imagem ao background de um pagina*/
     padding: 40px 0;
 }
 
