@@ -1,55 +1,122 @@
 body{
+
+}
+header{
+    background: #bbbbbb;
+    padding: 20px 0;
+}
+.caixa{ /*ajeita o cabeçalho, para ele ficar harmonico o logo com o menu de navegação*/
+    position: relative;    
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{ /* ajeita o menu de navegação, colocando ele no lugar desejado */
+    position: absolute;
+    top: 110px;
+    right: 0px;
     
 }
-
-#banner{
-    width: 100%;
+nav li{ /* altera o display dos itens da lista  */
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.principal{
-    background: #cccccc;
-    padding: 30px;
+nav a{  /* ajusta o estilo, tamanho, cor e afins dos itens da lista */
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold; /* negrito */
+    text-decoration: none; /* remove o link debaixo das palvras */
 }
 
-.tituloprincipal{
-    padding-left:20px;
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos{  /* ajeita o formato da lista de produtos na pagina */
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.titulocentralizado{
-    text-align: center; 
-}
-
-p{ 
+.produtos li{   /* ajusta o display juntamente com o seu alinhamento e centralização */
+    display: inline-block;
     text-align: center;
-    background: #cccccc;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Aqui se cria uma caixa para a borda */
+    border: 2px solid black; /* Aqui se ajusta a borda, largura, tipo da linha e cor*/
+    border-radius: 40px; /* Se usa para arredondar os cantos das bordas */
 }
 
-#missao{
+.produtos li:hover{ /* altera a cor da fonte quando o mouse passa por cima*/
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /* altera a cor da fonte com o clique do mouse*/
+    border-color: #C78C19;
+}
+
+.produtos li:hover h2 { /* altera o tamanho da fonte, necessario ser assim pois a fonte ja tem tamanho definido */
+    font-size:34px;
+}
+
+.produtos h2{   /* ajusta somente a estilização dos titulos de produtos */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{ /* ajusta somente a estilização da descrição do produto */
+    font-size: 18px;
+}
+
+.produto-preco{ /* ajusta somente a estilização do preço */
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("/img/bg.jpg"); /* assim podemos adicionar uma imagem ao background de um pagina*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+    margin: 20px 0 0;
+}
+
+main{
+    width: 940px; /* definição padrão para uma página */
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+form label, form p{ /* usando a virgula podemos agrupar objetos que queremos o mesmo design */
+    display: block;
     font-size: 20px;
+    margin: 0 0 10px;
 }
 
-em strong{
-    color: red;
-}
-
-.itens{
-    font-style: italic;
-}
-
-.beneficios{
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-ul{
-    display:inline-block;
-    vertical-align:top;
-    width: 20%;
-    margin-right: 15%;
-    font-size:24px;
-    
-}
-
-.imagembeneficios{
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;  /* 0 para cima, 0 para os lados, 20 para baixo */
+    padding: 10px 25px; /* 10 para cima e baixo, 25 para os lados */
     width: 50%;
 }
+
+.checkbox{
+    margin: 20px 0; /* 20 para cima e pra baixo*/ 
+}
+
+
+
+

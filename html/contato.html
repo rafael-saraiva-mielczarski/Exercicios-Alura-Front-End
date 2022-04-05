@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Barberia Alura</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">  
+            <h1><img src="/img/logo.png"></h1>
+
+            <nav>
+                <ul>
+                    <li class="itens"> <a href="/html/index.html"> Home </a> </li>
+                    <li class="itens"> <a href="/html/productpage.html"> Produtos</a> </li>
+                    <li class="itens"> <a href="/html/contato.html"> Contato </a> </li>
+                </ul>
+            </nav>
+        </div>  
+      </header>
+      <main>
+          <div>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome </label>
+                <input type="text" id="nomesobrenome" class="input-padrao">
+
+                <label for="email"> E-mail </label>  <!-- Faz aparecer escrito Email  -->
+                <input type="text" id="email" class="input-padrao"> 
+                <!-- id possibilita clicar no escrito E-mail e direcionar para a caixa de texto -->
+            
+                <label for="telefone"> Telefone </label>  
+                <input type="text" id="telefone" class="input-padrao">
+
+                <label for="mensagem"> Mensagem</label> 
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+                <!-- textarea usado para fazer uma caixa de texto -->          
+            
+                <div>
+                    <p> Como prefere o nosso contato? </p>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email </label>
+                    <!-- name agrupa os outros botão e faz com que se um for marcado o outro é desmarcado-->
+            
+                    <label for="radio-telefone"><input type="radio"  name="contato" value="telefone" id="radio-telefone"> Telefone </label>
+                    <!--O input fica dentro do label para que a marcação fique antes de Telefone-->
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> Whatsapp </label>
+                </div>
+
+                <div>
+                    <p> Qual horário prefere ser atendido? </p>
+                    <select>
+                        <option> Manhã </option>
+                        <option> Tarde </option>
+                        <option> Noite </option>
+                    </select>
+                </div>
+
+            <label><input type="checkbox" class="checbox"> Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário">
+        </form>
+
+      </main>
+      <footer> 
+        <img src="/img/logo-branco.png">
+        <p class="copyright"> &copy;Copyright Barbearia Alura - 2019 </p>
+    </footer>
+</body>
+
+</html>
