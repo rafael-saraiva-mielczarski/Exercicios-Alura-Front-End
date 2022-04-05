@@ -100,7 +100,7 @@ form{
     margin: 40px 0px;
 }
 
-form label, form p{ /* usando a virgula podemos agrupar objetos que queremos o mesmo design */
+form label, form legend{ /* usando a virgula podemos agrupar objetos que queremos o mesmo design */
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -115,6 +115,40 @@ form label, form p{ /* usando a virgula podemos agrupar objetos que queremos o m
 
 .checkbox{
     margin: 20px 0; /* 20 para cima e pra baixo*/ 
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all; /*usada na transição, 1 segundo de demora e muda tudo no formulário*/
+    cursor:pointer; /*Transformar o cursor na mãozinha, quando esta em cima do item*/
+}
+
+.enviar:hover{
+    background:darkorange;
+    transform: scale(1.2); /*aumenta tudo em 20%*/
+    /*transform:rotate(70deg); gira em 70 graus o item */
+}
+
+table {
+    margin:20px 0 40px; /*20px pra cima, 0 pros lados, 40px pra baixo */
+}
+
+thead { 
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td, th{
+    border:1px solid #000000;
+    padding: 8px 15px; /*8px para cima e para baixo, 15px para os lados*/
 }
 
 
