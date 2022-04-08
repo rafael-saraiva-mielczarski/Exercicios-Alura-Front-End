@@ -94,6 +94,24 @@
     margin: 2em auto;
 }
 
+@media screen and (max-width: 480px) {/*usa-se para ajeitar o design no mobile*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
 /* main p{ Pinta todos os paragrafos dentro do main de vermelho
     background: red;
 }
@@ -277,3 +295,4 @@ td, th{
     border:1px solid #000000;
     padding: 8px 15px; /*8px para cima e para baixo, 15px para os lados*/
 }
+
